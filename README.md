@@ -16,7 +16,7 @@
 - Setup AWS cloud S3 bucket & Rules
 - Start the demo
 
-#### Prepare AWS Greengrass
+#### Step1: Prepare AWS Greengrass
 1.  Install AWS Greengrass App in QNAP NAS from App center
 
 ![](./images/step1.png)
@@ -45,10 +45,10 @@
 
 ![](./images/step5.png)  
 
-#### Setup AWS GG Device
+#### Step2: Setup AWS GG Device
 Deploy the "Capture image" source code from <> folder to Raspberry Pi
   
-#### Setup QIoT  
+#### Step3: Setup QIoT  
 1. Import <> folder LiveDemo.json to QIoT
 2. If you are using old QIoT version then please follow the below manual instruction
 + Create 2 things as below
@@ -61,12 +61,12 @@ Deploy the "Capture image" source code from <> folder to Raspberry Pi
 + Verify your dashboard
   ![](./images/qiot_step4.png)  
 
-#### Setup QuAI
+#### Step4: Setup QuAI
 Please follow this link <> setup instruction
 
-#### Setup AWS cloud S3 bucket & Rules
+#### Step5: Setup AWS cloud S3 bucket & Rules
 
-#### Start the demo
+#### Step6: Start the demo
 Setup the camera in Raspberry Pi device and start the program by executing the following command
 
     python send_image_AWSGG.py -e <host>.iot.<region>.amazonaws.com -r root.ca.pem -c <GG_Camrea_Cert_pem_file> -k GG_Camrea_Cert_private_key_file -n GG_Camera -m publish -t "cameraImage"
