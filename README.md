@@ -25,9 +25,10 @@
 4.  Create a new device inside Greengrass Group Devices section as shown in the below image
 ![](./images/step3.png)
 5.  Prepare below 3 subscriptions list
--   Greengrass Device to SendGGImageToQIoT:9 Lambda for Image Prediction
--   QIoTIntegration Lambda function to IoT Cloud for upload predicted image to S3 Bucket
--   Greengrass Device to QIoTIntegration:16 Lmabda for republish QIoT predcited message to  AWS Greengrass then to AWS Cloud
+  - Greengrass Device to SendGGImageToQIoT:9 Lambda for Image Prediction
+  - QIoTIntegration Lambda function to IoT Cloud for upload predicted image to S3 Bucket
+  - Greengrass Device to QIoTIntegration:16 Lmabda for republish QIoT predcited message to  AWS Greengrass then to AWS Cloud.
+
   Please refer the following image for these 3 subscriptions list source, destination and topic details
 ![](./images/step4.png)  
 
