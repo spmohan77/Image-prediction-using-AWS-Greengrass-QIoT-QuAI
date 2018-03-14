@@ -15,6 +15,7 @@
 - Setup QuAI
 - Setup AWS cloud S3 bucket & Rules
 - Start the demo
+- Verify the demo
 
 #### ___Step1:___ Prepare AWS Greengrass
 1.  Install AWS Greengrass App in QNAP NAS from App center
@@ -66,11 +67,12 @@ Deploy the "Capture image" source code from <> folder to Raspberry Pi
   ![](./images/qiot_step4.png)  
 
 #### ___Step4:___ Setup QuAI
-Please follow this link <> setup instruction
+Please follow this link <> to setup QuAI container in QNAP NAS container station app.
 
 #### ___Step5:___ Setup AWS cloud S3 bucket & Rules
 1. Create MoveImageToS3 Node.js Lambda function in AWS Lambda service
-2. Create a Act(rule) in AWS IoT to upload Image to S3 bucket using Rule's action "Invoke a Lambda function passing the message data"
+2. Create a new S3 bucket "qiotquaiggdemo" in AWS S3 service
+3. Create a Act(rule) in AWS IoT to upload Image to S3 bucket using Rule's action "Invoke a Lambda function passing the message data"
 
 ![](./images/lambdaStep1.png)
 
