@@ -1,12 +1,13 @@
-##Tutorial to setup Image prediction using AWS Greengrass + QIoT + QuAI using Raspberry Pi
+# Tutorial to setup Image prediction using AWS Greengrass + QIoT + QuAI using Raspberry Pi
 
-###Example Scenarios
+## Example Scenarios
+
 - Capture image and publish to AWS Greengrass
 - Capture image and publish to QIoT
 
-###Capture image and publish to AWS Greengrass
----
-####How to setup?
+### Capture image and publish to AWS Greengrass
+
+#### How to setup?
 
 - Prepare AWS Greengrass
 - Setup AWS GG Device
@@ -15,10 +16,13 @@
 - Setup AWS cloud S3 bucket & Lambda function
 - Start the demo
 
-####Prepare AWS Greengrass
+#### Prepare AWS Greengrass
 1.  Install AWS Greengrass App in QNAP NAS from App center
 ![](./images/step1.png)
 2.  Setup your AWS Greengrass Group & Core in QNAP AWS Greengrass App. Please refer this link for more details https://qiot.qnap.com/blog/en/2018/01/17/setup-greengrass-qnap-nas/
+3.  Create two Lambda function as shown in the below image and update it's Memeory limit to 500 MB and timeout to 20 second. Please find Demo Lambda source codes inside <> folder
+![](./images/step2.png)
+4.  
 
 # Editor.md
 
