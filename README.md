@@ -1,6 +1,6 @@
-Tutorial to setup Image prediction using AWS Greengrass + QIoT + QuAI using Raspberry Pi
+##Tutorial to setup Image prediction using AWS Greengrass + QIoT + QuAI using Raspberry Pi
 
-Example Scenarios
+###Example Scenarios
 - Capture image and publish to AWS Greengrass
 - Capture image and publish to QIoT
 
