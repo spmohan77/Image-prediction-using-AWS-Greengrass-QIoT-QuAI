@@ -35,6 +35,11 @@
 6. Deploy the Greengrass Group.
 ![](./images/step5.png)  
 
+#### Setup AWS GG Device
+1. Deploy the capture image source code from <> folder to Raspberry Pi
+2. Setup the camera in Raspberry Pi device and start the program by executing the following command
+___python send_image_AWSGG.py -e <host>.iot.<region>.amazonaws.com -r root.ca.pem -c <GG_Camrea_Cert_pem_file> -k GG_Camrea_Cert_private_key_file -n GG_Camera -m publish -t "cameraImage"___
+  
 # Editor.md
 
 ![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
