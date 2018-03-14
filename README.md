@@ -13,7 +13,7 @@
 - Setup AWS GG Device
 - Setup QIoT
 - Setup QuAI
-- Setup AWS cloud S3 bucket & Lambda function
+- Setup AWS cloud S3 bucket & Rules
 - Start the demo
 
 #### Prepare AWS Greengrass
@@ -46,10 +46,7 @@
 ![](./images/step5.png)  
 
 #### Setup AWS GG Device
-1. Deploy the "Capture image" source code from <> folder to Raspberry Pi
-2. Setup the camera in Raspberry Pi device and start the program by executing the following command
-
-    ___python send_image_AWSGG.py -e <host>.iot.<region>.amazonaws.com -r root.ca.pem -c <GG_Camrea_Cert_pem_file> -k GG_Camrea_Cert_private_key_file -n GG_Camera -m publish -t "cameraImage"___
+Deploy the "Capture image" source code from <> folder to Raspberry Pi
   
 #### Setup QIoT  
 1. Import <> folder LiveDemo.json to QIoT
@@ -61,13 +58,19 @@
   ![](./images/qiot_step2.png)  
   
   ![](./images/qiot_step3.png)  
-+ After apply rules your dashboard will look as below
++ Verify your dashboard
   ![](./images/qiot_step4.png)  
 
 #### Setup QuAI
 Please follow this link <> setup instruction
 
+#### Setup AWS cloud S3 bucket & Rules
 
+#### Start the demo
+Setup the camera in Raspberry Pi device and start the program by executing the following command
+
+    ___python send_image_AWSGG.py -e <host>.iot.<region>.amazonaws.com -r root.ca.pem -c <GG_Camrea_Cert_pem_file> -k GG_Camrea_Cert_private_key_file -n GG_Camera -m publish -t "cameraImage"___
+    
 # Editor.md
 
 ![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
