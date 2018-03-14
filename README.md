@@ -54,7 +54,6 @@
 #### Setup QIoT  
 1. Import <> folder LiveDemo.json to QIoT
 2. If you are using old QIoT version then please follow the below manual instruction
-
   2.1 Create 2 things as below
 
   ![](./images/qiot_step1.png)  
