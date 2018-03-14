@@ -69,7 +69,7 @@ Please follow this link <> setup instruction
 #### Start the demo
 Setup the camera in Raspberry Pi device and start the program by executing the following command
 
-    ___python send_image_AWSGG.py -e <host>.iot.<region>.amazonaws.com -r root.ca.pem -c <GG_Camrea_Cert_pem_file> -k GG_Camrea_Cert_private_key_file -n GG_Camera -m publish -t "cameraImage"___
+    python send_image_AWSGG.py -e <host>.iot.<region>.amazonaws.com -r root.ca.pem -c <GG_Camrea_Cert_pem_file> -k GG_Camrea_Cert_private_key_file -n GG_Camera -m publish -t "cameraImage"
     
 # Editor.md
 
