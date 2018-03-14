@@ -20,9 +20,13 @@
 1.  Install AWS Greengrass App in QNAP NAS from App center
 ![](./images/step1.png)
 2.  Setup your AWS Greengrass Group & Core in QNAP AWS Greengrass App. Please refer this link for more details https://qiot.qnap.com/blog/en/2018/01/17/setup-greengrass-qnap-nas/
-3.  Create two Lambda function as shown in the below image and update it's Memeory limit to 500 MB and timeout to 20 second. Please find Demo Lambda source codes inside <> folder
+3.  Create two Lambda function as shown in the below image and update it's configuration setting's Memeory limit to 500 MB and timeout to 20 second. Please find Demo Lambda source codes inside <> folder
 ![](./images/step2.png)
-4.  
+4.  Create a new device inside Greengrass Group Devices section as shown in the below image
+![](./images/step3.png)
+5.  Prepare below 3 subscriptions list
+- Camera Image message from Greengrass Device to QIoT for Image Prediction
+- QIoTIntegration Lambda function to IoT Cloud for upload
 
 # Editor.md
 
