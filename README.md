@@ -22,7 +22,7 @@
 ![](./images/step1.png)
 
 2.  Setup your AWS Greengrass Group & Core in QNAP AWS Greengrass App. Please refer this link for more details https://qiot.qnap.com/blog/en/2018/01/17/setup-greengrass-qnap-nas/
-3.  Create two Lambda function as shown in the below image and update it's configuration setting's Memeory limit and timeout. Please find Demo Lambda source codes inside <> folder
+3.  Create SendGGImageToQIoT & QIoTIntegration Node.js Lambda functions inside AWS Greengrass Lambda function  as shown in the below image and update it's configuration setting's Memeory limit and timeout. Please find Demo Lambda source codes inside <> folder
 
 ![](./images/step2.png)
 
@@ -52,19 +52,35 @@ Deploy the "Capture image" source code from <> folder to Raspberry Pi
 1. Import <> folder LiveDemo.json to QIoT
 2. If you are using old QIoT version then please follow the below manual instruction
 + Create 2 things as below
+
   ![](./images/qiot_step1.png)  
+  
 + Import <> to rules using Rules tab --> Import --> Clipboard option. After import you can see the following 2 rules flow
 
   ![](./images/qiot_step2.png)  
   
   ![](./images/qiot_step3.png)  
+  
 + Verify your dashboard
+
   ![](./images/qiot_step4.png)  
 
 #### ___Step4:___ Setup QuAI
 Please follow this link <> setup instruction
 
 #### ___Step5:___ Setup AWS cloud S3 bucket & Rules
+1. Create MoveImageToS3 Node.js Lambda function in AWS Lambda service
+2. Create a Act(rule) in AWS IoT to upload Image to S3 bucket using Rule's action "Invoke a Lambda function passing the message data"
+
+![](./images/lambdaStep1.png)
+
+![](./images/lambdaStep2.png)
+
+3. Declare MoveImageToS3 in the function name drop down and update the changes
+
+![](./images/lambdaStep3.png)
+
+![](./images/lambdaStep4.png)
 
 #### ___Step6:___ Start the demo
 Setup the camera in Raspberry Pi device and start the program by executing the following command
