@@ -1,11 +1,11 @@
 # Tutorial to setup Image prediction using AWS Greengrass + QIoT + QuAI using Raspberry Pi
 
-## Example Scenarios
+## Example Scenarios to predict captures image from Raspberry Pi
 
-- Capture image and publish to AWS Greengrass
-- Capture image and publish to QIoT
+- AWS GG device --> AWS GG Core --> QIoT --> QuAI --> AWS GG Core Lambda --> AWS Cloud --> S3 bucket
+- QIoT device --> QIoT --> QuAI --> AWS GG Core Lambda --> AWS Cloud --> S3 bucket
 
-### Capture image and publish to AWS Greengrass
+### Scenario1: AWS GG device --> AWS GG Core --> QIoT --> QuAI --> AWS GG Core Lambda --> AWS Cloud --> S3 bucket
 
 #### How to setup?
 
@@ -20,9 +20,17 @@
 1.  Install AWS Greengrass App in QNAP NAS from App center
 ![](./images/step1.png)
 2.  Setup your AWS Greengrass Group & Core in QNAP AWS Greengrass App. Please refer this link for more details https://qiot.qnap.com/blog/en/2018/01/17/setup-greengrass-qnap-nas/
-3.  Create two Lambda function as shown in the below image and update it's Memeory limit to 500 MB and timeout to 20 second. Please find Demo Lambda source codes inside <> folder
+3.  Create two Lambda function as shown in the below image and update it's configuration setting's Memeory limit to 500 MB and timeout to 20 second. Please find Demo Lambda source codes inside <> folder
 ![](./images/step2.png)
-4.  
+4.  Create a new device inside Greengrass Group Devices section as shown in the below image
+![](./images/step3.png)
+5.  Prepare below 3 subscriptions list
+  - Greengrass Device to SendGGImageToQIoT:9 Lambda for Image Prediction
+  - QIoTIntegration Lambda function to IoT Cloud for upload predicted image to S3 Bucket
+  - Greengrass Device to QIoTIntegration:16 Lmabda for republish QIoT predcited message to  AWS Greengrass then to AWS Cloud.
+
+  Please refer the following image for these 3 subscriptions list source, destination and topic details
+![](./images/step4.png)  
 
 # Editor.md
 
