@@ -18,7 +18,9 @@
 
 #### Prepare AWS Greengrass
 1.  Install AWS Greengrass App in QNAP NAS from App center
+
 ![](./images/step1.png)
+
 2.  Setup your AWS Greengrass Group & Core in QNAP AWS Greengrass App. Please refer this link for more details https://qiot.qnap.com/blog/en/2018/01/17/setup-greengrass-qnap-nas/
 3.  Create two Lambda function as shown in the below image and update it's configuration setting's Memeory limit and timeout. Please find Demo Lambda source codes inside <> folder
 
@@ -53,19 +55,19 @@
 1. Import <> folder LiveDemo.json to QIoT
 2. If you are using old QIoT version then please follow the below manual instruction
 
-2.1 Create 2 things as below
+  2.1 Create 2 things as below
 
-![](./images/qiot_step1.png)  
+  ![](./images/qiot_step1.png)  
 
-2.2 Import <> to rules using Rules tab --> Import --> Clipboard option. After import you can see the following 2 rules flow
+  2.2 Import <> to rules using Rules tab --> Import --> Clipboard option. After import you can see the following 2 rules flow
 
-![](./images/qiot_step2.png)  
+  ![](./images/qiot_step2.png)  
 
-![](./images/qiot_step3.png)  
+  ![](./images/qiot_step3.png)  
 
-2.3 After apply rules your dashboard will look as below
+  2.3 After apply rules your dashboard will look as below
 
-![](./images/qiot_step4.png)  
+  ![](./images/qiot_step4.png)  
 
 #### Setup QuAI
 Please follow this link <> setup instruction
