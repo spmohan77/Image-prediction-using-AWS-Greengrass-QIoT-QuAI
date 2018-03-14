@@ -36,10 +36,22 @@
 ![](./images/step5.png)  
 
 #### Setup AWS GG Device
-1. Deploy the capture image source code from <> folder to Raspberry Pi
+1. Deploy the "Capture image" source code from <> folder to Raspberry Pi
 2. Setup the camera in Raspberry Pi device and start the program by executing the following command
+
 ___python send_image_AWSGG.py -e <host>.iot.<region>.amazonaws.com -r root.ca.pem -c <GG_Camrea_Cert_pem_file> -k GG_Camrea_Cert_private_key_file -n GG_Camera -m publish -t "cameraImage"___
   
+#### Setup QIoT  
+1. Import <> folder LiveDemo.json to QIoT
+2. If you are using old QIoT version then please follow the below manual instruction
+2.1 Create 2 things as below
+![](./images/qiot_step1.png)  
+2.2 Import <> to rules using Rules tab --> Import --> Clipboard option. After import you can see the following 2 rules flow
+![](./images/qiot_step2.png)  
+![](./images/qiot_step3.png)  
+2.3 After apply rules your dashboard will look as below
+![](./images/qiot_step4.png)  
+
 # Editor.md
 
 ![](https://pandao.github.io/editor.md/images/logos/editormd-logo-180x180.png)
