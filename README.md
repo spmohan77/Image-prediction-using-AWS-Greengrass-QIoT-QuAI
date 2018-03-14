@@ -54,18 +54,14 @@
 #### Setup QIoT  
 1. Import <> folder LiveDemo.json to QIoT
 2. If you are using old QIoT version then please follow the below manual instruction
-  2.1 Create 2 things as below
-
++ Create 2 things as below
   ![](./images/qiot_step1.png)  
-
-  2.2 Import <> to rules using Rules tab --> Import --> Clipboard option. After import you can see the following 2 rules flow
++ Import <> to rules using Rules tab --> Import --> Clipboard option. After import you can see the following 2 rules flow
 
   ![](./images/qiot_step2.png)  
-
+  
   ![](./images/qiot_step3.png)  
-
-  2.3 After apply rules your dashboard will look as below
-
++ After apply rules your dashboard will look as below
   ![](./images/qiot_step4.png)  
 
 #### Setup QuAI
