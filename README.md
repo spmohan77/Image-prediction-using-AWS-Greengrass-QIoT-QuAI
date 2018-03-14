@@ -1,11 +1,11 @@
 # Tutorial to setup Image prediction using AWS Greengrass + QIoT + QuAI using Raspberry Pi
 
-## Example Scenarios
+## Example Scenarios to predict captures image from Raspberry Pi
 
-- Capture image and publish to AWS Greengrass
-- Capture image and publish to QIoT
+- AWS GG device --> AWS GG Core --> QIoT --> QuAI --> AWS GG Core Lambda --> AWS Cloud --> S3 bucket
+- QIoT device --> QIoT --> QuAI --> AWS GG Core Lambda --> AWS Cloud --> S3 bucket
 
-### Capture image and publish to AWS Greengrass
+### AWS GG device --> AWS GG Core --> QIoT --> QuAI --> AWS GG Core Lambda --> AWS Cloud --> S3 bucket
 
 #### How to setup?
 
