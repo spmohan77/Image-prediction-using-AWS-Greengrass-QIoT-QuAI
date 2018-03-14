@@ -3,7 +3,14 @@
 ## Example Scenarios to predict captures image from Raspberry Pi
 
 - AWS GG device --> AWS GG Core --> QIoT --> QuAI --> AWS GG Core Lambda --> AWS Cloud --> S3 bucket
+
+![](./images/scenario1.png)
+
 - QIoT device --> QIoT --> QuAI --> AWS GG Core Lambda --> AWS Cloud --> S3 bucket
+
+![](./images/scenario2.png)
+
+
 
 ### Scenario1: AWS GG device --> AWS GG Core --> QIoT --> QuAI --> AWS GG Core Lambda --> AWS Cloud --> S3 bucket
 
