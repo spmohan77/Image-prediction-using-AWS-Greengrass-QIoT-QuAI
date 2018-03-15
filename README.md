@@ -18,8 +18,8 @@ Please refer this link <> to setup this scenario
 
 #### How to setup?
 
-1. [Prepare AWS Greengrass](#Prepare AWS Greengrass)
-2. [Setup AWS GG Device](#Setup AWS GG Device")
+1. [Prepare AWS Greengrass](#Prepare-AWS-Greengrass)
+2. [Setup AWS GG Device](#Setup-AWS-GG-Device")
 3. [Setup QIoT](https://github.com/qnap-dev/qnap-qiot-sdks/tree/master/projects/AWSGreengrass-Integration-Scenarios/Greengrass_device_QIoT_QuAI/#step3-setup-qiot "Setup QIoT")
 4. [Setup QuAI](https://github.com/qnap-dev/qnap-qiot-sdks/tree/master/projects/AWSGreengrass-Integration-Scenarios/Greengrass_device_QIoT_QuAI/#step4-setup-quai "Setup QuAI")
 5. [Setup AWS cloud S3 bucket & Rules](https://github.com/qnap-dev/qnap-qiot-sdks/tree/master/projects/AWSGreengrass-Integration-Scenarios/Greengrass_device_QIoT_QuAI/#step5-setup-aws-cloud-s3-bucket--rules "Setup AWS cloud S3 bucket & Rules")
