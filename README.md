@@ -18,7 +18,7 @@ Please refer this link <> to setup this scenario
 
 #### How to setup?
 
-1. [Prepare AWS Greengrass](https://github.com/spmohan77/test/blob/master/README.md "Prepare AWS Greengrass")
+1. [Prepare AWS Greengrass](#prepare-aws-greengrass)
 2. [Setup AWS GG Device](https://github.com/qnap-dev/qnap-qiot-sdks/tree/master/projects/AWSGreengrass-Integration-Scenarios/Greengrass_device_QIoT_QuAI/#step2-setup-aws-gg-device "Setup AWS GG Device")
 3. [Setup QIoT](https://github.com/qnap-dev/qnap-qiot-sdks/tree/master/projects/AWSGreengrass-Integration-Scenarios/Greengrass_device_QIoT_QuAI/#step3-setup-qiot "Setup QIoT")
 4. [Setup QuAI](https://github.com/qnap-dev/qnap-qiot-sdks/tree/master/projects/AWSGreengrass-Integration-Scenarios/Greengrass_device_QIoT_QuAI/#step4-setup-quai "Setup QuAI")
